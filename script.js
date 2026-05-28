@@ -1,8 +1,6 @@
-/* ═══════════════════════════════════════════════════
-   EXO APE GALLERY — SCRIPT
-   ═══════════════════════════════════════════════════ */
 
-const projects = [
+
+const projects= [
   {
     title: "Speed & Style",
     subtitle: "Automotive Portrait Series",
