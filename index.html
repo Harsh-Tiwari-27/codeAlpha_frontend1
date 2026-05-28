@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision Gallery</title>
+  <meta name="description"
+    content="vision App — A premium immersive image gallery showcasing automotive, fashion, and lifestyle photography." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">vision <span></span></div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Studio</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav-plus">+</div>
+    </div>
+  </nav>
+
+  <!-- ═══ GALLERY STRIP ═══ -->
+  <div class="gallery-wrapper" id="galleryWrapper">
+    <div class="gallery-track">
+
+      <div class="gallery-item" data-index="0">
+        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600" alt="Speed & Style" />
+        <div class="hover-grid">
+          <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=300" />
+          <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?w=300" />
+          <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?w=300" />
+          <div class="hover-view-btn">
+            <div class="hover-view-dot"></div>
+            <span>View</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-index="1">
+        <img src="https://plus.unsplash.com/premium_photo-1686730540270-93f2c33351b6?w=600" alt="Drive Culture" />
+        <div class="hover-grid">
+          <img src="https://plus.unsplash.com/premium_photo-1686730540270-93f2c33351b6?w=300" />
+          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=300" />
+          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=300" />
+          <div class="hover-view-btn">
+            <div class="hover-view-dot"></div>
+            <span>View</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-index="2">
+        <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=600" alt="Electric Future" />
+        <div class="hover-grid">
+          <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=300" />
+          <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=300" />
+          <img src="https://images.unsplash.com/photo-1668293750324-bd77c1f08ca9?w=300" />
+          <div class="hover-view-btn">
+            <div class="hover-view-dot"></div>
+            <span>View</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-index="3">
+        <img src="https://images.unsplash.com/photo-1778084765801-a53bc6dc5f96?w=600" alt="Luxury Motion" />
+        <div class="hover-grid">
+          <img src="https://images.unsplash.com/photo-1778084765801-a53bc6dc5f96?w=300" />
+          <img src="https://plus.unsplash.com/premium_photo-1712935547661-4fe0b2de98bf?w=300" />
+          <img src="https://images.unsplash.com/photo-1778142375628-73010ebde16a?w=300" />
+          <div class="hover-view-btn">
+            <div class="hover-view-dot"></div>
+            <span>View</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-index="4">
+        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600" alt="Rino & Pelle" />
+        <div class="hover-grid">
+          <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=300" />
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=300" />
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300" />
+          <div class="hover-view-btn">
+            <div class="hover-view-dot"></div>
+            <span>View</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ BOTTOM BAR ═══ -->
+  <div class="bottom-bar" id="bottomBar">
+    <button class="close-btn" id="closeBtn">&#x2715; Close</button>
+    <div class="bottom-project-info" id="bottomProjectInfo">
+      <span class="bottom-project-title" id="bottomTitle"></span>
+      <span class="bottom-project-sep"> — </span>
+      <span class="bottom-project-sub" id="bottomSub"></span>
+    </div>
+  </div>
+
+  <!-- ═══ FULL-SCREEN PROJECT VIEW ═══ -->
+  <div class="project-view" id="projectView">
+    <div class="pv-bg" id="pvBg"></div>
+    <div class="pv-bg-overlay"></div>
+
+    <nav class="navbar navbar--light">
+      <div class="logo">vision <span></span></div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Studio</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-plus">+</div>
+      </div>
+    </nav>
+
+    <div class="pv-center">
+      <div class="pv-info">
+        <h1 class="pv-title" id="pvTitle"></h1>
+        <p class="pv-subtitle" id="pvSubtitle"></p>
+      </div>
+      <div class="pv-thumb-wrap">
+        <div class="pv-thumb-frame">
+          <img class="pv-thumb-img" id="pvThumb" src="" alt="Project thumbnail" />
+        </div>
+      </div>
+    </div>
+
+    <div class="pv-view-action" id="pvViewAction">
+      <div class="pv-view-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M7 17l9.2-9.2M17 17V7H7" />
+        </svg>
+      </div>
+      <span class="pv-view-text">View</span>
+    </div>
+
+    <div class="pv-footer">
+      <button class="pv-back" id="pvBack">
+        <span class="pv-back-icon">&#9783;</span>
+        All Projects
+      </button>
+      <span class="pv-counter" id="pvCounter">01 / 05</span>
+    </div>
+
+    <button class="pv-arrow pv-arrow--prev" id="pvPrev">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+    </button>
+    <button class="pv-arrow pv-arrow--next" id="pvNext">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="9 6 15 12 9 18" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ═══ DETAIL PANEL (split layout) ═══ -->
+  <div class="detail-panel" id="detailPanel">
+
+    <!-- Split card container -->
+    <div class="dp-card" id="dpCard">
+
+      <!-- Left: large featured image -->
+      <div class="dp-main-image">
+        <img id="dpMainImg" src="" alt="Featured" />
+      </div>
+
+      <!-- Right: thumbnails + info -->
+      <div class="dp-sidebar">
+        <div class="dp-thumbs" id="dpThumbs"></div>
+        <div class="dp-info">
+          <h2 class="dp-title" id="dpTitle"></h2>
+          <p class="dp-desc" id="dpDesc"></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
